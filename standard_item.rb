@@ -8,7 +8,7 @@ class StandardItem
   end
 
   def register_passage_of_time!
-    update_quality! if can_update_quality?
+    update_quality!
     update_sell_in!
   end
 
@@ -21,10 +21,6 @@ class StandardItem
   end
 
   private
-
-  def can_update_quality?
-    !at_or_above_max_quality? && !at_or_below_min_quality?
-  end
 
   def update_quality!
     register_incremental_quality_change!
