@@ -12,6 +12,8 @@ def update_quality(items)
   items.each_with_index do |item, index|
     source = objectified[index]
 
+          
+
     item.sell_in = source.sell_in
     item.quality = source.quality
   end
