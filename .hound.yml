@@ -1,6 +1,6 @@
 ruby:
   config_file: .ruby_style.yml
-  enabled: true
+  enabled: false
 
 coffeescript:
   enabled: false
